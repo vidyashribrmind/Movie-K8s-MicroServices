@@ -1,0 +1,5 @@
+package com.mindtree.mymoviecatalogservice.config;
+
+public class SwaggerConfig {
+
+}
