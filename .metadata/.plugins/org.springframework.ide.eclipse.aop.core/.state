@@ -2,7 +2,6 @@
 <aop-reference-model>
 <aop-project name="rating-data-service"/>
 <aop-project name="eureka-server"/>
-<aop-project name="movie-rating-service"/>
 <aop-project name="movie-info-service"/>
 <aop-project name="my-movie-catalog-service"/>
 </aop-reference-model>

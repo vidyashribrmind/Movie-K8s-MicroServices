@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.services.UserRatingInfoService"/>
-<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
@@ -14,7 +12,6 @@
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.mindtree.movieinfoservice.repository.MovieRepository"/>
-<fullyQualifiedTypeName name="com.mindtree.movieinfoservice.service.MovieService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.repository.RatingRepository"/>
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.repository.UserRatingRepository"/>
@@ -31,8 +28,6 @@
 <fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.MovieList"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.digester.ArrayStack"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.MovieAvgRating"/>
 <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
 <fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.RatingListDto"/>
@@ -41,9 +36,7 @@
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.dto.RatingListDto"/>
 <fullyQualifiedTypeName name="org.springframework.core.ParameterizedTypeReference"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.Rating"/>
 <fullyQualifiedTypeName name="com.mindtree.movieinfoservice.entity.Movie"/>
-<fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.Movie"/>
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.entity.UserRating"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.dto.RatingDto"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="springfox.documentation.builders.ApiInfoBuilder"/>
 <fullyQualifiedTypeName name="springfox.documentation.service.Contact"/>
 <fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.UserRating"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.Rating"/>
+<fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.Movie"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="com.mindtree.movieinfoservice.service.MovieService"/>
 </qualifiedTypeNameHistroy>

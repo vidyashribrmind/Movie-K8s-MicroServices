@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -17,9 +18,13 @@ public class UserRatingInfoService {
 	@Autowired
 	RestTemplate restTemplate;
 	
+	//private final String  movieUrl="http://movie-info-service/movies/";
+	
+	private final String  ratingUrl="http://rating-data-service/ratingsdata/";
+	
 	@HystrixCommand(fallbackMethod = "getUserRatingFallBack")
 	public UserRating getUserRating(int userId) {
-		 UserRating userRating = restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/" + userId, UserRating.class);
+		 UserRating userRating = restTemplate.getForObject(ratingUrl+userId, UserRating.class);
 		 return userRating;
 	}
 	
@@ -30,7 +35,7 @@ public class UserRatingInfoService {
 	
 	@HystrixCommand(fallbackMethod = "getUserRatingFallBack")
 	public UserRating getAddUser(UserRating rating) {
-		 UserRating userRating = restTemplate.postForObject("http://ratings-data-service/ratingsdata/adduser/",rating ,UserRating.class);
+		 UserRating userRating = restTemplate.postForObject(ratingUrl,rating ,UserRating.class);
 		 return userRating;
 	}
 	

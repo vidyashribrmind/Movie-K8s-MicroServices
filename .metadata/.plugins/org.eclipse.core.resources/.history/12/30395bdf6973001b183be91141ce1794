@@ -1,0 +1,8 @@
+spring.application.name=movie-catalog-service
+server.port=8083
+movieinfo="movie-info-service"
+#${movieinfoservice}
+ratinginfo="rating-data-service"
+#${ratingdataservice}
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+management.endpoints.web.exposure.include=hystrix.stream
