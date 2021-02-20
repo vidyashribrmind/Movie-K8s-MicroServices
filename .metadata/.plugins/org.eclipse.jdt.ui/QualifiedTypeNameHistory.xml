@@ -36,7 +36,6 @@
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.dto.RatingListDto"/>
 <fullyQualifiedTypeName name="org.springframework.core.ParameterizedTypeReference"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.mindtree.movieinfoservice.entity.Movie"/>
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.entity.UserRating"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="com.mindtree.ratingdataservice.dto.RatingDto"/>
@@ -58,6 +57,7 @@
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.Rating"/>
 <fullyQualifiedTypeName name="com.mindtree.mymoviecatalogservice.entity.Movie"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="com.mindtree.movieinfoservice.service.MovieService"/>
+<fullyQualifiedTypeName name="com.mindtree.movieinfoservice.entity.Movie"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>
