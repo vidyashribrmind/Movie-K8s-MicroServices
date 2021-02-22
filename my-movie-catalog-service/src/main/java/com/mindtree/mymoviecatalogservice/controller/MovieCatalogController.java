@@ -24,9 +24,9 @@ import com.mindtree.mymoviecatalogservice.services.UserRatingInfoService;
 import com.mindtree.mymoviecatalogservice.entity.CatalogItem;
 import com.mindtree.mymoviecatalogservice.entity.Movie;
 import com.mindtree.mymoviecatalogservice.entity.MovieAvgRating;
+import com.mindtree.mymoviecatalogservice.entity.MovieSummary;
 import com.mindtree.mymoviecatalogservice.entity.Rating;
 import com.mindtree.mymoviecatalogservice.entity.RatingList;
-
 
 @RestController
 @RequestMapping("/catalog")
@@ -78,6 +78,13 @@ public class MovieCatalogController {
     	//System.err.println(result);
     	return "<h1>"+result+"</h1>";
     }	
+    
+    @GetMapping("/getapimovie/{movieId}")
+    public MovieSummary getApiMovie(@PathVariable("movieId") String movieId) {
+    	String result="http://movie-info-service/movies/apimovie/"+movieId; //http://localhost:8090/movie-info-service/movies/apimovie/;
+    	//System.out.println(result);
+    	return restTemplate.getForObject(result,MovieSummary.class);
+    }
    
 
 }

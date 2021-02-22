@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import com.mindtree.movieinfoservice.entity.Movie;
+import com.mindtree.movieinfoservice.entity.MovieSummary;
 import com.mindtree.movieinfoservice.service.MovieService;
 
 
@@ -50,5 +51,11 @@ public class MovieInfoController {
 	 @GetMapping("/hello")
 	 public String getHello() {
 		 return "Movie-Service";
+	 }
+	 
+	 @GetMapping("/apimovie/{movieId}")
+	 public MovieSummary getMovieInfoApi(@PathVariable("movieId") String movieId) {
+	        MovieSummary movieSummary = restTemplate.getForObject("https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" +  apiKey, MovieSummary.class);
+		 return movieSummary;
 	 }
 }

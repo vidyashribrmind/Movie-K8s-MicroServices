@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="rating-data-service"/>
+<aop-project name="zull-gateway"/>
 <aop-project name="eureka-server"/>
 <aop-project name="movie-info-service"/>
 <aop-project name="my-movie-catalog-service"/>
