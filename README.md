@@ -1,5 +1,5 @@
 # Movie-K8s-MicroServices
-## Spring Boot Microservices Application with Kubernetes <img src="https://github.com/KRams2019/JenkinsDemoPipeline/blob/master/springboot.png" width="40"> <img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="30">
+## Spring Boot Microservices Application with Kubernetes <img src="https://github.com/KRams2019/MyStoreRepo/blob/master/springboot.png" width="30"> <img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="30">
 
 **This is a spring boot microservices project consists of three microservices - MovieInfoServices , RatingDataService and MovieCatalogService** 
 
