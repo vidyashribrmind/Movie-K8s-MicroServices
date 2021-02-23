@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: mysql-service
+ labels:
+  app: mysql-db
+spec:
+ ports:
+ - port: 3306
+   targetPort: 3306
+ selector:
+   tier: database 
+ #env:
+ # - name: mysqlservice
+ #   value: mysql-service 

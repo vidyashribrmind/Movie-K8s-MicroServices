@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: eurekaserver
+ labels:
+  client: eurekaserver
+spec:
+ containers: 
+  - name: eurekaserver
+    image: krsai01/eureka-server-image:v2
+    ports:
+     - containerPort: 8761
