@@ -7,6 +7,6 @@ metadata:
 spec:
  containers: 
   - name: zull
-    image: krsai01/zull:v2
+    image: krsai01/zull:v4
     ports:
      - containerPort: 8090

@@ -115,7 +115,7 @@ public class MovieInfoService {
 	@HystrixCommand(fallbackMethod = "getMovieResponseFallback")
 	public List<Movie> getMovieResponse() {
 
-		ResponseEntity<List<Movie>> movieResponse = restTemplate.exchange("http://movie-info-service/movies/getAll",
+		ResponseEntity<List<Movie>> movieResponse = restTemplate.exchange("http://movie-info-service:8082/movies/getAll",
 				HttpMethod.GET, null, new ParameterizedTypeReference<List<Movie>>() {
 				});
 		return movieResponse.getBody();

@@ -78,7 +78,16 @@ public class MovieCatalogController {
     	//System.err.println(result);
     	return "<h1>"+result+"</h1>";
     }	
-    
+   
+   @GetMapping("/hellon")
+   public String getMovieInfon() {
+   String result= restTemplate.getForObject("http://movie-info-service:8081/movies/hello",String.class);
+     //System.err.println(result);
+           return "<h1>"+result+"</h1>";
+   }
+
+
+ 
     @GetMapping("/getapimovie/{movieId}")
     public MovieSummary getApiMovie(@PathVariable("movieId") String movieId) {
     	String result="http://movie-info-service/movies/apimovie/"+movieId; //http://localhost:8090/movie-info-service/movies/apimovie/;

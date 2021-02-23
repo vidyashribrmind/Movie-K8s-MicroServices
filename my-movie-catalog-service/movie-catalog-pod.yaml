@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: movie-catalog-service
+ labels:
+  type: movie-catalog-service
+spec:
+ containers: 
+  - name: movie-catalog-service
+    image: krsai01/movie-catalog-img:v15
+    ports:
+     - containerPort: 8083
+    env:
+     - name: mysqlservice
+       value: mysql-service
