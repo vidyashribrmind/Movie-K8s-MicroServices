@@ -5,7 +5,7 @@
 
 **And MovieCatalogService which consumes data from the two services - MovieInfoService and RatingDataService**
 
-**Finally we used Kubernetes to deploy our Application** :metal:
+**And we used Kubernetes to deploy our Application** :metal:
 
 💡 Code Inspired from Java Brains- MicroServices
 
